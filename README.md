@@ -11,3 +11,5 @@ The goal of the project other than to meet class requirements, is to learn a bit
 In a [Jupyter Notebook](./learn/Twitter%20Sentiment%20Analysis.ipynb), following a [Twitter Sentiment Analysis Tutorial](http://www.thegrammarlab.com/?nor-portfolio=corpus-of-presidential-speeches-cops-and-a-clintontrump-corpus) I try to gain some Natural Language Toolkit (NLTK) experience.
 
 After finishing the tutorial it seems simply using [TextBlob](https://textblob.readthedocs.io/en/dev/) or [VADER-Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) would be a better option.
+
+In a [quick test](./learn/TextBlob_VADER_test.ipynb), I have decided to move forward using VADER Sentiment Analysis.
