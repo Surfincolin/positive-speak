@@ -8,6 +8,6 @@ The goal of the project other than to meet class requirements, is to learn a bit
 
 ### Part 1 - Learning some NLP
 
-In a [Jupyter Notebook](learn/Twitter Sentiment Analysis.ipynb), following a [Twitter Sentiment Analysis Tutorial](http://www.thegrammarlab.com/?nor-portfolio=corpus-of-presidential-speeches-cops-and-a-clintontrump-corpus) I try to gain some Natural Language Toolkit (NLTK) experience.
+In a [Jupyter Notebook](./learn/Twitter%20Sentiment%20Analysis.ipynb), following a [Twitter Sentiment Analysis Tutorial](http://www.thegrammarlab.com/?nor-portfolio=corpus-of-presidential-speeches-cops-and-a-clintontrump-corpus) I try to gain some Natural Language Toolkit (NLTK) experience.
 
-After finishing the tutorial it seems simply using [TextBlob](https://textblob.readthedocs.io/en/dev/) or [VADER-Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) would be a better option. 
+After finishing the tutorial it seems simply using [TextBlob](https://textblob.readthedocs.io/en/dev/) or [VADER-Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) would be a better option.
