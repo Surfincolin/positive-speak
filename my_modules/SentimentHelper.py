@@ -1,0 +1,1 @@
+# Analyze large chunks of text for a positive/negative score.
