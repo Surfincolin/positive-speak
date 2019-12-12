@@ -32,9 +32,9 @@ class GDP:
 		Parameters
 		----------
 		cpi_fileinfo: FileInfo
-			Consumer Price Index file info.
+			Consumer Price Index CSV file info.
 		gdp_fileinfo: FileInfo
-			GDP (Gross Domestic Product) file info.
+			GDP (Gross Domestic Product) CSV file info.
 		'''
 		self.cpi_fileinfo = cpi_fileinfo
 		self.gdp_fileinfo = gdp_fileinfo
@@ -43,8 +43,11 @@ class GDP:
 		self.__calc_gdp_growth()
 		self.gdp_data = self.__gdp_df[['date', 'growth']]
 
-
 	def __calc_gdp_growth(self):
+		'''
+		Completes the steps to calculate and append
+		the GDP growth rate to the GDP dataset.
+		'''
 		df = pd.read_csv(self.gdp_fileinfo.filename)
 		df = self.__cpi_df.merge(df)
 		df = df.rename(columns = {
@@ -73,6 +76,10 @@ class GDP:
 		self.__gdp_df = df
 
 	def __calc_cpi_inflation(self):
+		'''
+		Completes the steps to calculate and append
+		the inflation rate to the cpi dataset.
+		'''
 		df = pd.read_csv(self.cpi_fileinfo.filename)
 
 		prev_cpi = None
@@ -91,20 +98,18 @@ class GDP:
 		self.__cpi_df = df
 
 def convert_year_int_to_date(i_int):
+	'''
+	Convert a year int to date, ex. 1970.
+
+	Parameters
+	----------
+	i_int: int
+			The integer to convert to a date.
+			
+	Returns
+	----------
+	return: datetime
+			A datetime obj with the month and day at 1.
+	'''
 	return datetime.datetime(year=i_int,month=1,day=1)
 
-"""
-Checks answer to question to see if it should iterate 
-to next question or stops asking questions.
-
-Parameters
-----------
-ans: str
-		The input from the user.
-		
-Returns
-----------
-return: bool
-		Shows if answer matches expected input.
-		
-"""
