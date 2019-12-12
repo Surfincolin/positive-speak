@@ -1,1 +1,8 @@
-Requirements.txt
+Requirements for my program:
+
+- The modules 'pandas', and 'vaderSentiment' must be installed
+- Along with other if you have the bar minimum, like matplotlib
+
+ - The file 'Corpus of Presidential Speeches.zip' will be unzipped in the notebook. If it has issues, you can unzip it manually.
+
+ Hope this helps get things rolling!
